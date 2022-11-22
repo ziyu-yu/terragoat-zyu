@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "dockingbay" {
-  bucket_prefix = "test-drift-bucket-"
+  bucket_prefix = "test-drift-bucket-" 
 
   tags = {
-    Name                 = "Drift Test"
+    Name                 = "Drift Test" 
     Environment          = "Dev"
     git_commit           = "b3936d8e919a812530beffcdb7b8f5d7686fc247"
     git_file             = "test-drift/s3.tf"
