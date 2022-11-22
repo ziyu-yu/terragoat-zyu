@@ -21,3 +21,4 @@ jobs:
           PRISMA_API_URL: https://api4.prismacloud.io
         with:
           api-key: ${{ secrets.PC_API_KEY }}
+          soft_fail: true # optional: do not return an error code if there are failed checks
