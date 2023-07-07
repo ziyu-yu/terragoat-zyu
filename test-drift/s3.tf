@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_s3_bucket" "dockingbay" {
 
   tags = {
-    drift = "detected"
+    drift                = "detected"
     Name                 = "Drift Test"
     Environment          = "Dev"
     git_commit           = "b3936d8e919a812530beffcdb7b8f5d7686fc247"
@@ -16,8 +16,9 @@ resource "aws_s3_bucket" "dockingbay" {
     git_org              = "ziyu-yu"
     git_repo             = "terragoat-zyu"
     yor_trace            = "a87ad5ea-83da-457f-900f-61bb7b707cb2"
+    yor_name             = "dockingbay"
   }
-  bucket = "test-drift-bucket-20230105185957766800000001"
-  server_side_encryption_configuration = {"rule": {"apply_server_side_encryption_by_default": {"sse_algorithm": "AES256"}}}
+  bucket                               = "test-drift-bucket-20230105185957766800000001"
+  server_side_encryption_configuration = { "rule" : { "apply_server_side_encryption_by_default" : { "sse_algorithm" : "AES256" } } }
 }
 
