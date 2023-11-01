@@ -16,5 +16,6 @@ resource "aws_s3_bucket" "dockingbay" {
     git_org              = "ziyu-yu"
     git_repo             = "terragoat-zyu"
     yor_trace            = "a87ad5ea-83da-457f-900f-61bb7b707cb2"
+    yor_name             = "dockingbay"
   }
 }
